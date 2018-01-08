@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 
-
 class Clock extends Component {
 	constructor(props){
 		super(props);
@@ -9,7 +8,7 @@ class Clock extends Component {
 			days: 0,
 			hours: 0,
 			minutes: 0,
-			seconds: 0
+			seconds: 0,
 		}
 
 	}
@@ -27,16 +26,19 @@ class Clock extends Component {
 		// ad 0 to single digits nums in countdown timer
 		return num < 10 ? '0' + num : num;
 	}
+
 	getTimeUntil(deadline){
 		//subtracts deadline from current time
-		console.log(deadline, 'deadline')
+
 		let time = Date.parse(deadline) - Date.parse(new Date());
 		const seconds = Math.floor((time/1000)%60);
 		const minutes = Math.floor((time/1000/60)%60);
 		const hours = Math.floor(time/(1000*60*60)%24);
 		const days = Math.floor(time/(1000*60*60*24));
+
 		// console.log('sec', seconds, 'mins',minutes, 'hours', hours, 'days', days);
-		this.setState({days, hours, minutes, seconds})
+		this.setState({days, hours, minutes, seconds});
+	
 	}
 	render() {
 		return(				

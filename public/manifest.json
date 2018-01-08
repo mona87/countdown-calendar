@@ -1,21 +1,14 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-    "src": "splashscreen-icon-512x512.png",
-    "sizes": "512x512",
-    "type": "image/png"
-} 
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-   "orientation": "portrait",
-  "background_color": "#ffffff"
+    "name": "Countdown Calendar",
+    "short_name": "Countdown Calendar",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
 }

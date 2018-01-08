@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import FontIcon from 'material-ui/FontIcon';
 import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
 import Paper from 'material-ui/Paper';
-import github from './github'
 
 const icon = <FontIcon ></FontIcon>;
 
@@ -22,7 +21,7 @@ class BottomNav extends Component {
           <BottomNavigationItem
             label="GitHub"
             icon={icon}
-            onClick={() => window.open('https://github.com')}
+            onClick={() => window.open('https://github.com/mona87/countdown-calendar')}
           />
         </BottomNavigation>
       </Paper>

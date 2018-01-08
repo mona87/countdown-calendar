@@ -26,6 +26,7 @@ class App extends Component {
     resetTime(date) {
         //reset countdown a a year from current day
         let time = Date.parse(date) - Date.parse(new Date());
+
         if (time <= 0) {
 
             let newDate = new Date();
@@ -43,6 +44,8 @@ class App extends Component {
             month = date.toLocaleString(locale, { month: "long" }),
             day = date.toLocaleString(locale, { day: "2-digit" }),
             year = date.toLocaleString(locale, { year: "numeric" });
+      
+       
         localStorage.setItem('date', `${month} ${day}, ${year}`);
 
         this.setState({
